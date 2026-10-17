@@ -63,12 +63,14 @@ button:active{transform:scale(.96)}
 .f1{left:13%}.f2{left:37%;bottom:40px}.f3{left:62%;bottom:32px}.f4{left:87%;bottom:45px}
 
 .card{
-  width:min(100%,620px);background:#fffdf7;color:#263044;border-radius:18px;
-  padding:28px 24px 34px;box-shadow:0 18px 45px rgba(0,0,0,.35);
+  width:min(100%,620px);background:linear-gradient(145deg,#101b3c,#172752 55%,#1d3157);
+  color:#f8f2e5;border-radius:18px;
+  padding:32px 25px 38px;box-shadow:0 18px 45px rgba(0,0,0,.4);
+  border:1px solid rgba(255,244,214,.16);
   position:relative;margin:30px auto 80px;
 }
 .card:before{
-  content:"";position:absolute;inset:7px;border:1px solid #eadfca;border-radius:13px;pointer-events:none;
+  content:"";position:absolute;inset:7px;border:1px solid rgba(255,244,214,.14);border-radius:13px;pointer-events:none;
 }
 .card h2{text-align:center;margin:0 0 24px;font-size:27px;color:#283452}
 .letter p{font-size:18px;line-height:1.8;margin:0 0 18px}
@@ -113,7 +115,15 @@ button:active{transform:scale(.96)}
 
 @media(min-width:700px){
   .scene{padding-top:14vh}
-  .letter p{font-size:19px}
+  .letter p{font-size:20px}
+}
+
+.final-love{
+  display:block;
+  margin-top:18px;
+  font-size:clamp(22px,6vw,30px);
+  color:#fff1c9;
+  text-shadow:0 0 14px rgba(255,241,201,.35);
 }
 </style>
 </head>
@@ -225,7 +235,7 @@ button:active{transform:scale(.96)}
 
   <section class="scene hidden final" id="finalScene">
     <div class="heart">❤️</div>
-    <h2>Yo te quiero, Karen. ♡</h2>
+    <h2>El cielo es bonito, pero se queda corto comparado contigo.<br><span class="final-love">Yo te quiero, Karen. ♡</span></h2>
     <p>Gracias por llegar hasta aquí.</p>
     <p>— Jeshua</p>
   </section>
